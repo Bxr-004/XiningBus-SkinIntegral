@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\Projram\\xiningBusApp\\zhinnegBus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\pages\\myskin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\pages\\myskin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\pages\\myskin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\pages\\myskin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,20 +11,28 @@
       "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\pages\\skindetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\pages\\skindetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\pages\\myskin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\pages\\myskin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\pages\\skinshop.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\pages\\skinshop.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\pages\\myskin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\pages\\myskin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\pages\\skindetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\pages\\skindetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\pages\\skinshop.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\pages\\skinshop.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|solutionrelative:zhinnegbus\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{475BE7C0-25A9-9801-32F9-18F45F0E7CB0}|zhinnegBus\\zhinnegBus.csproj|d:\\projram\\xiningbusapp\\zhinnegbus\\zhinnegbus\\pages\\skinshop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -96,46 +96,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SkinShop.cshtml.cs",
-              "DocumentMoniker": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Pages\\SkinShop.cshtml.cs",
-              "RelativeDocumentMoniker": "zhinnegBus\\Pages\\SkinShop.cshtml.cs",
-              "ToolTip": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Pages\\SkinShop.cshtml.cs",
-              "RelativeToolTip": "zhinnegBus\\Pages\\SkinShop.cshtml.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwC8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:35:43.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MySkin.cshtml",
               "DocumentMoniker": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Pages\\MySkin.cshtml",
               "RelativeDocumentMoniker": "zhinnegBus\\Pages\\MySkin.cshtml",
               "ToolTip": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Pages\\MySkin.cshtml",
               "RelativeToolTip": "zhinnegBus\\Pages\\MySkin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAJ8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-30T01:39:50.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "SkinShop.cshtml.cs",
+              "DocumentMoniker": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Pages\\SkinShop.cshtml.cs",
+              "RelativeDocumentMoniker": "zhinnegBus\\Pages\\SkinShop.cshtml.cs",
+              "ToolTip": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Pages\\SkinShop.cshtml.cs",
+              "RelativeToolTip": "zhinnegBus\\Pages\\SkinShop.cshtml.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAUwC8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T03:35:43.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MySkin.cshtml.cs",
               "DocumentMoniker": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Pages\\MySkin.cshtml.cs",
               "RelativeDocumentMoniker": "zhinnegBus\\Pages\\MySkin.cshtml.cs",
               "ToolTip": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Pages\\MySkin.cshtml.cs",
               "RelativeToolTip": "zhinnegBus\\Pages\\MySkin.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwCoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-30T01:40:27.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Program.cs",
               "RelativeDocumentMoniker": "zhinnegBus\\Program.cs",
@@ -148,20 +148,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UserData.cs",
               "DocumentMoniker": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Models\\UserData.cs",
               "RelativeDocumentMoniker": "zhinnegBus\\Models\\UserData.cs",
               "ToolTip": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Models\\UserData.cs",
               "RelativeToolTip": "zhinnegBus\\Models\\UserData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-29T12:42:31.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SkinDetail.cshtml",
               "DocumentMoniker": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Pages\\SkinDetail.cshtml",
               "RelativeDocumentMoniker": "zhinnegBus\\Pages\\SkinDetail.cshtml",
@@ -169,8 +169,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\SkinDetail.cshtml",
               "ViewState": "AgIAABcAAAAAAAAAAAAswKkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-30T01:29:42.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T01:29:42.151Z"
             },
             {
               "$type": "Document",
@@ -182,8 +181,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\SkinDetail.cshtml.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAIwAkBAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T01:30:24.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T01:30:24.836Z"
             },
             {
               "$type": "Document",
@@ -195,8 +193,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\SkinShop.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAKEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-29T12:51:00.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T12:51:00.4Z"
             },
             {
               "$type": "Document",
@@ -208,12 +205,11 @@
               "RelativeToolTip": "zhinnegBus\\Models\\Skin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T01:25:14.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T01:25:14.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "site.css",
               "DocumentMoniker": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "zhinnegBus\\wwwroot\\css\\site.css",
@@ -221,8 +217,7 @@
               "RelativeToolTip": "zhinnegBus\\wwwroot\\css\\site.css",
               "ViewState": "AgIAAA4AAAAAAAAAAAAowBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-06-30T03:16:56.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T03:16:56.529Z"
             },
             {
               "$type": "Document",
