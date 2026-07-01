@@ -1,0 +1,225 @@
+﻿@page
+@using zhinnegBus.Models
+@model zhinnegBus.Pages.SkinShopModel
+@Html.AntiForgeryToken()
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #e6f8ee;
+        font-family: "微软雅黑", sans-serif;
+    }
+
+    /* 顶部标题栏 */
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 20px;
+    }
+
+    .shop-title {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .top-btn-group button {
+        border: 0;
+        padding: 8px 16px;
+        background: #60c697;
+        color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+
+    /* 搜索框 */
+    .search-wrap {
+        padding: 0 20px 10px;
+    }
+
+    #searchInput {
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 99px;
+        border: 1px solid #333;
+        background: #e6f8ee;
+        font-size: 16px;
+    }
+
+    /* 分类标签栏 */
+    .tab-scroll {
+        display: flex;
+        gap: 16px;
+        padding: 0 20px 20px;
+    }
+
+    .tab-item {
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        .tab-item.active {
+            color: #009955;
+            border-bottom: 2px solid #009955;
+        }
+
+    /* 皮肤卡片容器 */
+    .skin-wrap {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+    }
+
+    .skin-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 424px;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .skin-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+    .skin-info {
+        padding: 10px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 6px;
+    }
+
+    .free-tag {
+        color: #f56c6c;
+        font-weight: bold;
+    }
+
+    .get-skin {
+        width: 100%;
+        height: 44px;
+        padding: 0;
+        border: none;
+        background: #60c697;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 44px;
+    }
+</style>
+
+<div class="top-bar">
+    <div class="shop-title">皮肤商城</div>
+    <div class="top-btn-group" style="display:flex; gap:16px; align-items:center;">
+        <!-- 修复报错：替换为全局静态UserData积分 -->
+        <span>当前积分：@UserData.UserPoint</span>
+        <button onclick="location.href='/MySkin'">我的皮肤</button>
+        <button onclick="location.href='/PointMall'">积分商城</button>
+    </div>
+</div>
+
+<!-- 搜索框 -->
+<div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="搜索皮肤">
+</div>
+
+<!-- 分类标签栏 -->
+<div class="tab-scroll" id="tabContainer">
+    <div class="tab-item active" data-cat="">全部</div>
+    <div class="tab-item" data-cat="热门">热门</div>
+    <div class="tab-item" data-cat="免费">免费</div>
+    <div class="tab-item" data-cat="简约风">简约风</div>
+    <div class="tab-item" data-cat="治愈文字风">治愈文字风</div>
+    <div class="tab-item" data-cat="动漫风">动漫风</div>
+    <div class="tab-item" data-cat="古风">古风</div>
+</div>
+
+<!-- 皮肤卡片容器 -->
+<div class="skin-wrap" id="skinBox">
+    @foreach (var skin in Model.SkinList)
+    {
+        <div class="skin-card" data-cat="@skin.Category" data-free="@skin.IsFree.ToString()" data-name="@skin.SkinName.ToLower()" onclick="location.href='/SkinDetail/@skin.Id'">
+            <img src="@skin.ImgPath" alt="@skin.SkinName">
+            <div class="skin-info">
+                <h4>@skin.SkinName</h4>
+                <span>@skin.Tag</span>
+                @if (skin.IsFree)
+                {
+                    <div class="free-tag">免费</div>
+                }
+                else
+                {
+                    <div>积分：@skin.CostPoint</div>
+                }
+            </div>
+            <button class="get-skin" data-id="@skin.Id">
+                @(skin.IsFree ? "免费领取" : "兑换皮肤")
+            </button>
+        </div>
+    }
+</div>
+
+<div style="padding:30px 20px;text-align:center;color:#666;">
+    © 2026 - zhinnegBus - 隐私
+</div>
+
+<script>
+    // 分类筛选
+    const tabs = document.querySelectorAll(".tab-item");
+    const cards = document.querySelectorAll(".skin-card");
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+            const cat = tab.getAttribute("data-cat");
+            cards.forEach(card => {
+                const c = card.getAttribute("data-cat");
+                const isFree = card.getAttribute("data-free") === "True";
+                if (cat === "") {
+                    card.style.display = "block";
+                } else if (cat === "免费") {
+                    card.style.display = isFree ? "block" : "none";
+                } else {
+                    card.style.display = c === cat ? "block" : "none";
+                }
+            })
+        })
+    })
+
+    // 搜索
+    const input = document.getElementById("searchInput");
+    input.addEventListener("input", () => {
+        const val = input.value.trim().toLowerCase();
+        cards.forEach(card => {
+            const name = card.dataset.name;
+            card.style.display = name.includes(val) ? "block" : "none";
+        })
+    })
+
+    // 兑换皮肤按钮点击事件
+    document.querySelectorAll('.get-skin').forEach(btn => {
+        btn.addEventListener('click', async function () {
+            const skinId = this.dataset.id;
+            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+            const res = await fetch(`?handler=Exchange&skinId=${skinId}`, {
+                method: "POST",
+                headers: {
+                    "RequestVerificationToken": token
+                }
+            });
+            const data = await res.json();
+            alert(data.msg);
+            location.reload();
+        })
+    })
+</script>

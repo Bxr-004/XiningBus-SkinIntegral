@@ -1,0 +1,170 @@
+﻿@page "/SkinDetail/{skinId:int}"
+@using zhinnegBus.Models
+@model zhinnegBus.Pages.SkinDetailModel
+@Html.AntiForgeryToken()
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #ffffff;
+    }
+
+    .back-bar {
+        padding: 16px 20px;
+    }
+
+    .back-btn {
+        border: none;
+        background: transparent;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .preview-wrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+        .preview-wrap img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+    .tip-text {
+        text-align: center;
+        margin: 12px 0 30px;
+        color: #777;
+    }
+
+    .info-area {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .skin-title {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .tag-group {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .tag-item {
+        padding: 4px 12px;
+        border: 1px solid #f0c888;
+        color: #d48824;
+        border-radius: 20px;
+    }
+
+    .bottom-fixed {
+        position: fixed;
+        bottom: 120px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        background: #fff;
+        border-top: 1px solid #eee;
+    }
+
+    .price-text {
+        font-size: 26px;
+        font-weight: bold;
+        color: #f56c6c;
+    }
+
+    .operate-btn {
+        flex: 1;
+        height: 50px;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .exchange-btn {
+        background: #ff6633;
+    }
+
+    .use-btn {
+        background: #60c697;
+    }
+</style>
+
+<div class="back-bar">
+    <button class="back-btn" onclick="location.href='/SkinShop'">← 返回皮肤商城</button>
+</div>
+
+<!-- 预览大图：皮肤生效后的页面截图 -->
+<div class="preview-wrap">
+    <img src="@Model.CurrentSkin.PreviewImg" alt="@Model.CurrentSkin.SkinName 皮肤效果预览">
+</div>
+<div class="tip-text">左右滑动，查看皮肤应用效果</div>
+
+<div class="info-area">
+    <h2 class="skin-title">@Model.CurrentSkin.SkinName</h2>
+    <div class="tag-group">
+        <span class="tag-item">@Model.CurrentSkin.Category</span>
+        <span class="tag-item">@Model.CurrentSkin.Tag</span>
+    </div>
+</div>
+
+<!-- 底部操作栏：未拥有显示兑换，已拥有显示使用 -->
+<div class="bottom-fixed">
+    <div class="price-text">
+        @if (Model.CurrentSkin.IsFree)
+        {
+            <span>免费</span>
+        }
+        else
+        {
+            <span>@Model.CurrentSkin.CostPoint 积分</span>
+        }
+    </div>
+    @if (Model.IsOwned)
+    {
+        <button class="operate-btn use-btn" id="useSkinBtn" data-id="@Model.CurrentSkin.Id">立即使用</button>
+    }
+    else
+    {
+        <button class="operate-btn exchange-btn" id="exchangeSkinBtn" data-id="@Model.CurrentSkin.Id">兑换皮肤</button>
+    }
+</div>
+
+<script>
+    const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+    // 兑换皮肤
+    document.getElementById("exchangeSkinBtn")?.addEventListener("click", async function () {
+        const skinId = this.dataset.id;
+        const res = await fetch(`?handler=Exchange&skinId=${skinId}`, {
+            method: "POST",
+            headers: { "RequestVerificationToken": token }
+        });
+        const data = await res.json();
+        alert(data.msg);
+        location.reload();
+    })
+    // 使用皮肤
+    document.getElementById("useSkinBtn")?.addEventListener("click", async function () {
+        const skinId = this.dataset.id;
+        const res = await fetch(`?handler=Use&skinId=${skinId}`, {
+            method: "POST",
+            headers: { "RequestVerificationToken": token }
+        });
+        const data = await res.json();
+        alert(data.msg);
+        location.href = "/SkinShop";
+    })
+</script>

@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@using zhinnegBus.Models;
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - 西宁智能公交</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/zhinnegBus.styles.css" asp-append-version="true" />
+
+    @{
+        List<Skin> AllSkinData = new()
+    {
+        new Skin
+        {
+            Id = 1,
+            ImgPath = "/img/skin1.jpg",
+            PreviewImg = "/img/preview/skin1_screen.png"
+        },
+        new Skin
+        {
+            Id = 2,
+            ImgPath = "/img/skin2.jpg",
+            PreviewImg = "/img/preview/skin2_screen.png"
+        },
+        new Skin
+        {
+            Id = 3,
+            ImgPath = "/img/skin3.jpg",
+            PreviewImg = "/img/preview/skin3_screen.png"
+        },
+        new Skin
+        {
+            Id = 4,
+            ImgPath = "/img/skin4.jpg",
+            PreviewImg = "/img/preview/skin4_screen.png"
+        },
+        new Skin
+        {
+            Id = 5,
+            ImgPath = "/img/skin5.jpg",
+            PreviewImg = "/img/preview/skin5_screen.png"
+        },
+        new Skin
+        {
+            Id = 6,
+            ImgPath = "/img/skin6.jpg",
+            PreviewImg = "/img/preview/skin6_screen.png"
+        },
+        new Skin
+        {
+            Id = 7,
+            ImgPath = "/img/skin7.jpg",
+            PreviewImg = "/img/preview/skin7_screen.png"
+        },
+        new Skin
+        {
+            Id = 8,
+            ImgPath = "/img/skin8.jpg",
+            PreviewImg = "/img/preview/skin8_screen.png"
+        },
+        new Skin
+        {
+            Id = 9,
+            ImgPath = "/img/skin9.jpg",
+            PreviewImg = "/img/preview/skin9_screen.png"
+        },
+        new Skin
+        {
+            Id = 10,
+            ImgPath = "/img/skin10.jpg",
+            PreviewImg = "/img/preview/skin10_screen.png"
+        },
+        new Skin
+        {
+            Id = 11,
+            ImgPath = "/img/skin11.jpg",
+            PreviewImg = "/img/preview/skin11_screen.png"
+        },
+        new Skin
+        {
+            Id = 12,
+            ImgPath = "/img/skin12.jpg",
+            PreviewImg = "/img/preview/skin12_screen.png"
+        },
+        new Skin
+        {
+            Id = 13,
+            ImgPath = "/img/skin13.jpg",
+            PreviewImg = "/img/preview/skin13_screen.png"
+        },
+        new Skin
+        {
+            Id = 14,
+            ImgPath = "/img/skin14.jpg",
+            PreviewImg = "/img/preview/skin14_screen.png"
+        },
+        new Skin
+        {
+            Id = 15,
+            ImgPath = "/img/skin15.jpg",
+            PreviewImg = "/img/preview/skin15_screen.png"
+        },
+        new Skin
+        {
+            Id = 16,
+            ImgPath = "/img/skin16.jpg",
+            PreviewImg = "/img/preview/skin16_screen.png"
+        },
+        new Skin
+        {
+            Id = 17,
+            ImgPath = "/img/skin17.jpg",
+            PreviewImg = "/img/preview/skin17_screen.png"
+        },
+        new Skin
+        {
+            Id = 18,
+            ImgPath = "/img/skin18.jpg",
+            PreviewImg = "/img/preview/skin18_screen.png"
+        },
+        new Skin
+        {
+            Id = 19,
+            ImgPath = "/img/skin19.jpg",
+            PreviewImg = "/img/preview/skin19_screen.png"
+        }
+    };
+        var activeSkin = AllSkinData.FirstOrDefault(s => s.Id == UserData.CurrentUseSkinId);
+    }
+    @if (activeSkin != null)
+    {
+        <style>
+                body {
+                    background-image: url( @Url.Content(activeSkin.ImgPath) );
+                    background-size: cover;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-color: transparent !important;
+                }
+
+                    body::before {
+                        content: "";
+                        position: fixed;
+                        inset: 0;
+                        background: rgba(255, 255, 255, 0.4);
+                        z-index: -1;
+                    }
+        </style>
+    }
+    else
+    {
+        <style>
+                body {
+                    background-color: #e6f8ee;
+                }
+        </style>
+    }
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">西宁智能公交</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/SkinShop">皮肤商城</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/PointMall">积分商城</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/MySkin">我的皮肤</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/MyCoupon">我的优惠券</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-1">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5" style="margin-top: 180px;">
+        <div class="container">
+            &copy; 2026 - 西宁智能公交
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

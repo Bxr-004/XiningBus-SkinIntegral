@@ -1,0 +1,160 @@
+﻿@page "/MySkin"
+@using zhinnegBus.Models
+@model zhinnegBus.Pages.MySkinModel
+@Html.AntiForgeryToken()
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #e6f8ee;
+        font-family: "微软雅黑", sans-serif;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .header-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .page-title {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .back-btn {
+        padding: 8px 16px;
+        background: #60c697;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .empty-tip {
+        font-size: 18px;
+        color: #666;
+        margin-top: 30px;
+    }
+
+    .skin-wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+    }
+
+    .skin-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 424px;
+        position: relative; /* 作为绝对定位父容器 */
+    }
+
+        .skin-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+    .skin-info {
+        padding: 10px;
+        padding-bottom: 50px; /* 预留按钮高度空间 */
+    }
+
+    .own-text {
+        color: #009955;
+        font-weight: bold;
+        margin: 6px 0;
+    }
+
+    /* 按钮固定在卡片最底部，左右留10px内边距 */
+    .use-btn-box {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .use-btn {
+        width: 100%;
+        height: 36px;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        background: #60c697;
+    }
+
+        .use-btn:disabled {
+            background: #bbbbbb;
+            cursor: not-allowed;
+        }
+</style>
+
+<div class="container">
+    <div class="header-box">
+        <div class="page-title">我的皮肤</div>
+        <button class="back-btn" onclick="location.href='/SkinShop'">返回商城</button>
+    </div>
+
+    @if (Model.MySkinList.Count == 0)
+    {
+        <p class="empty-tip">你还没有拥有任何皮肤，快去皮肤商城领取吧！</p>
+    }
+    else
+    {
+        <div class="skin-wrap">
+            @foreach (var item in Model.MySkinList)
+            {
+                <div class="skin-card">
+                    <img src="@item.ImgPath" alt="@item.SkinName">
+                    <div class="skin-info">
+                        <h4>@item.SkinName</h4>
+                        <span>@item.Tag</span>
+                        <div class="own-text">已拥有</div>
+                    </div>
+                    <!-- 按钮单独放到卡片底部绝对定位容器 -->
+                    <div class="use-btn-box">
+                        @if (Model.CurrentUseSkin != null && Model.CurrentUseSkin.Id == item.Id)
+                        {
+                            <button class="use-btn" disabled>正在使用</button>
+                        }
+                        else
+                        {
+                            <button class="use-btn use-skin-btn" data-id="@item.Id">使用该皮肤</button>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+<script>
+    const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+    document.querySelectorAll(".use-skin-btn").forEach(btn => {
+        btn.addEventListener("click", async function () {
+            const skinId = this.dataset.id;
+            const res = await fetch(`?handler=UseSkin&skinId=${skinId}`, {
+                method: "POST",
+                headers: {
+                    "RequestVerificationToken": token
+                }
+            });
+            const data = await res.json();
+            alert(data.msg);
+            location.reload();
+        })
+    })
+</script>

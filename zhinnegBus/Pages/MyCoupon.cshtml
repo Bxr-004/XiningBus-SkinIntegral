@@ -1,0 +1,120 @@
+﻿@page
+@using zhinnegBus.Models
+@model zhinnegBus.Pages.MyCouponModel
+@Html.AntiForgeryToken()
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #e6f8ee;
+        font-family: "微软雅黑", sans-serif;
+    }
+
+    .header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .back-btn {
+        padding: 8px 16px;
+        background: #60c697;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .coupon-wrap {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+    }
+
+    .coupon-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        padding-bottom: 12px;
+    }
+
+        .coupon-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+    .info {
+        padding: 10px;
+    }
+
+    .empty-tip {
+        text-align: center;
+        margin-top: 100px;
+        font-size: 18px;
+        color: #666;
+    }
+
+    .go-shop {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 10px 24px;
+        background: #60c697;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+    }
+
+    .footer {
+        margin-top: 60px;
+        padding: 30px 20px;
+        text-align: center;
+        color: #666;
+    }
+</style>
+
+<div class="header">
+    <button class="back-btn" onclick="location.href='/PointMall'">返回积分商城</button>
+    <div class="title">我的优惠券</div>
+    <div></div>
+</div>
+
+@if (Model.OwnCouponList.Count == 0)
+{
+    <div class="empty-tip">
+        <p>你还没有兑换任何优惠券</p>
+        <a class="go-shop" asp-page="PointMall">前往积分商城兑换</a>
+    </div>
+}
+else
+{
+    <div class="coupon-wrap">
+        @foreach (var item in Model.OwnCouponList)
+        {
+            <div class="coupon-card">
+                <img src="@item.ImgPath" alt="@item.CouponName">
+                <div class="info">
+                    <h4>@item.CouponName</h4>
+                    <p>抵扣@(item.DiscountMoney)元</p>
+                    <p>有效期@(item.ValidDay)天</p>
+                    <span style="color:#009955">@item.Tag</span>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<div class="footer">
+    © 2026 - zhinnegBus - 隐私
+</div>

@@ -1,0 +1,28 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* 大幅增加底部留白，给按钮留出空间 */
+    margin-bottom: 300px;
+}
+
+/* 给页脚强制加大顶部外边距，把版权文字往下推 */
+footer {
+    margin-top: 160px !important;
+}
