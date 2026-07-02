@@ -119,8 +119,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAL0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-29T13:11:10.515Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -132,8 +131,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Shared\\_Layout.cshtml.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-02T06:50:56.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-02T06:50:56.316Z"
             },
             {
               "$type": "Document",
@@ -145,8 +143,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Error.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-02T06:49:33.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-02T06:49:33.202Z"
             },
             {
               "$type": "Document",
@@ -158,8 +155,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-02T06:45:27.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-02T06:45:27.03Z"
             },
             {
               "$type": "Document",
@@ -171,8 +167,7 @@
               "RelativeToolTip": "zhinnegBus\\Models\\Coupon.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T02:57:13.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T02:57:13.091Z"
             },
             {
               "$type": "Document",
@@ -184,8 +179,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Coupon\\PointMall.cshtml",
               "ViewState": "AgIAAAsAAAAAAAAAAAAwwCcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-29T03:39:15.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T03:39:15.972Z"
             },
             {
               "$type": "Document",
@@ -195,7 +189,7 @@
               "RelativeDocumentMoniker": "zhinnegBus\\Program.cs",
               "ToolTip": "D:\\Projram\\xiningBusApp\\zhinnegBus\\zhinnegBus\\Program.cs",
               "RelativeToolTip": "zhinnegBus\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-29T08:08:58.659Z",
               "EditorCaption": ""
@@ -210,8 +204,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Coupon\\MyCoupon.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:22:35.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T03:22:35.817Z"
             },
             {
               "$type": "Document",
@@ -223,8 +216,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Admin\\SkinEdit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-02T02:48:37.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-02T02:48:37.338Z"
             },
             {
               "$type": "Document",
@@ -236,8 +228,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Coupon\\MyCoupon.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-29T03:21:59.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T03:21:59.483Z"
             },
             {
               "$type": "Document",
@@ -249,8 +240,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Skin\\MySkin.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T01:40:27.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T01:40:27.318Z"
             },
             {
               "$type": "Document",
@@ -310,8 +300,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Skin\\SkinShop.cshtml.cs",
               "ViewState": "AgIAABIBAAAAAAAAAAAUwC8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:35:43.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T03:35:43.444Z"
             },
             {
               "$type": "Document",
@@ -347,8 +336,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Skin\\SkinDetail.cshtml.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAIwAkBAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T01:30:24.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T01:30:24.836Z"
             },
             {
               "$type": "Document",
@@ -396,8 +384,7 @@
               "RelativeToolTip": "zhinnegBus\\Pages\\Coupon\\PointMall.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:40:51.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T03:40:51.367Z"
             },
             {
               "$type": "Document",
