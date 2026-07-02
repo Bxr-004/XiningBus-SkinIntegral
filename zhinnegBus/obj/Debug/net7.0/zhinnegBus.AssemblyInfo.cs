@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("zhinnegBus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+480b7ef1f029ef42cf6e2cec40511903de4a197f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99d76e6277f71a77f42c5a589badb1903f477e1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("zhinnegBus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("zhinnegBus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
